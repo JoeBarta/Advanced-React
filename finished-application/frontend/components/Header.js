@@ -17,6 +17,8 @@ Router.onRouteChangeError = () => {
   NProgress.done();
 };
 
+// theme is accessible in each styled component since our app is wrapped in Page.js which uses themeProvider
+// accessing nested html elements or css classes
 const Logo = styled.h1`
   font-size: 4rem;
   margin-left: 2rem;

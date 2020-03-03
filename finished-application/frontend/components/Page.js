@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
+// benefit of styled components is that it scopes our css
+// removing spill over and overwrites of other css classes/elements with the same naming convention
+
+// this can also be a con. - to expose the same style to other components needs to be set globally
+
+// themeProvider uses the theme prop with the object we created below.
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import Header from './Header';
 import Meta from './Meta';
 
+// reusable object with theming values
 const theme = {
   red: '#FF0000',
   black: '#393939',
@@ -24,6 +31,7 @@ const Inner = styled.div`
   padding: 2rem;
 `;
 
+// injectGlobal is deprecated, use createGlobalStyle now to wrap the app in global style
 injectGlobal`
   @font-face {
     font-family: 'radnika_next';

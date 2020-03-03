@@ -15,6 +15,9 @@ class MyApp extends App {
     pageProps.query = ctx.query;
     return { pageProps };
   }
+
+  // <Component /> relates to any Component rendered on page
+  // which gets wrapped with our App to receive the correct state/props
   render() {
     const { Component, apollo, pageProps } = this.props;
 

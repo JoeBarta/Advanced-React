@@ -1,3 +1,4 @@
+// next.js import React for you
 import Items from '../components/Items';
 
 const Home = props => (
