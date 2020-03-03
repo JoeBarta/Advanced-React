@@ -3,6 +3,8 @@ import Page from '../components/Page';
 import { ApolloProvider } from 'react-apollo';
 import withData from '../lib/withData';
 
+// MyApp is a wrapper provided by next.js
+// this allows us to keep state whilst navigating to next pages
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {};
