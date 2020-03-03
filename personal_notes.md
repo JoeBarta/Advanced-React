@@ -4,3 +4,5 @@ Where to find notes in the application that explain the concepts below
 2. ___app.js__ - state management and what wraps the app.
 3. __Page.js__ - theming of our app, global styling, themeProvider
 4. __Header.js__ - accessing theming props
+5. __Header.js__ - nprogress + __Meta.js__
+6. ___document.js__ - flashing css, styles not applied on mount

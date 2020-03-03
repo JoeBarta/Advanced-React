@@ -1,12 +1,15 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 import NProgress from 'nprogress';
+// imperative routing
 import Router from 'next/router';
 import Nav from './Nav';
 import Cart from './Cart';
 import Search from './Search';
 
+// listening for route changes
 Router.onRouteChangeStart = () => {
+  // hook into push state to allow browser to show it's waiting for resources
   NProgress.start();
 };
 Router.onRouteChangeComplete = () => {
